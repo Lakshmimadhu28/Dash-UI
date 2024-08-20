@@ -1,0 +1,95 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+        }
+
+        .sidebar h4 {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .sidebar .nav-item {
+            margin-bottom: 15px;
+        }
+
+        .container-fluid {
+            margin-left: 250px;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .table {
+            margin-top: 20px;
+        }
+
+        .performance-circle {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+        }
+
+        .circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 10px solid transparent;
+        }
+
+        #completed-circle {
+            border-color: green;
+            clip-path: inset(0 50% 0 0);
+            transform: rotate(76deg);
+        }
+
+        #inprogress-circle {
+            border-color: orange;
+            clip-path: inset(0 50% 0 0);
+            transform: rotate(108deg);
+        }
+
+        #behind-circle {
+            border-color: red;
+            clip-path: inset(0 50% 0 0);
+            transform: rotate(13deg);
+        }
+
+        .list-group-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list-group-item img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dee2e6;
+        }
+    

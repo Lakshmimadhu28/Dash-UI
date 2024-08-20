@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Dash.css">
+</head>
+<body>
+    
+  
+        <nav class="bg-dark text-white p-3 vh-100 sidebar">
+            <h4 class="mb-4">Dash UI</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Dashboard</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Pages</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Authentication</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Layouts</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Components</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Menu Level</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link text-white">Documentation</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="container-fluid p-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Projects</h2>
+                <button class="btn btn-primary">Create New Project</button>
+            </div>
+
+            <div class="row">
+                <!-- Projects Card -->
+                <div class="col-md-3">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projects</h5>
+                            <p class="card-text">18<br>2 Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Active Tasks Card -->
+                <div class="col-md-3">
+                    <div class="card text-white bg-secondary mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Active Task</h5>
+                            <p class="card-text">132<br>28 Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Teams Card -->
+                <div class="col-md-3">
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Teams</h5>
+                            <p class="card-text">12<br>1 Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Productivity Card -->
+                <div class="col-md-3">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Productivity</h5>
+                            <p class="card-text">76%<br>5% Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Projects Table -->
+            <div class="card">
+                <div class="card-header">
+                    Active Projects
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Project Name</th>
+                                <th scope="col">Hours</th>
+                                <th scope="col">Priority</th>
+                                <th scope="col">Members</th>
+                                <th scope="col">Progress</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dropbox Design System</td>
+                                <td>34</td>
+                                <td><span class="badge bg-warning text-dark">Medium</span></td>
+                                <td><span class="badge bg-primary">5+</span></td>
+                                <td><div class="progress"><div class="progress-bar bg-primary" style="width: 15%"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>Slack Team UI Design</td>
+                                <td>47</td>
+                                <td><span class="badge bg-danger">High</span></td>
+                                <td><span class="badge bg-primary">5+</span></td>
+                                <td><div class="progress"><div class="progress-bar bg-primary" style="width: 35%"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>GitHub Satellite</td>
+                                <td>120</td>
+                                <td><span class="badge bg-success">Low</span></td>
+                                <td><span class="badge bg-primary">5+</span></td>
+                                <td><div class="progress"><div class="progress-bar bg-primary" style="width: 75%"></div></div></td>
+                            </tr>
+                            <tr>
+                                <td>3D Character Modelling</td>
+                                <td>98</td>
+                                <td><span class="badge bg-warning text-dark">Medium</span></td>
+                                <td><span class="badge bg-primary">5+</span></td>
+                                <td><div class="progress"><div class="progress-bar bg-primary" style="width: 62%"></div></div></td>
+                            </tr>
+                            
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <div class="bg-white text-center card-footer"><a class="link-primary" href="/#">View All Projects</a></div>
+            </div>
+
+            <!-- Task Performance & Teams -->
+            <div class="row mt-5">
+                <!-- Task Performance -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tasks Performance</h5>
+                            <div class="d-flex justify-content-center">
+                                <div class="performance-circle">
+                                    <!-- Circular progress bars are usually implemented using JavaScript libraries like Chart.js -->
+                                    <!-- Placeholder for Circular Progress -->
+                                    <div class="circle" id="completed-circle"></div>
+                                    <div class="circle" id="inprogress-circle"></div>
+                                    <div class="circle" id="behind-circle"></div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <h4>76%</h4>
+                                    <p>Completed</p>
+                                </div>
+                                <div class="col">
+                                    <h4>32%</h4>
+                                    <p>In-Progress</p>
+                                </div>
+                                <div class="col">
+                                    <h4>13%</h4>
+                                    <p>Behind</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teams Section -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Teams</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Team Alpha</span>
+                                    <img src="https://via.placeholder.com/40" alt="team-logo" class="rounded-circle">
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Team Beta</span>
+                                    <img src="https://via.placeholder.com/40" alt="team-logo" class="rounded-circle">
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Team Gamma</span>
+                                    <img src="https://via.placeholder.com/40" alt="team-logo" class="rounded-circle">
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span>Team Delta</span>
+                                    <img src="https://via.placeholder.com/40" alt="team-logo" class="rounded-circle">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="text-center mt-4 py-4 border-top">
+                <p>&copy; 2023 Dashboard UI. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
